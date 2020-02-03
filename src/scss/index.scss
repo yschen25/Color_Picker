@@ -1,0 +1,176 @@
+@import '~compass-mixins/lib/compass/_css3.scss';
+@import '~compass-mixins/lib/_animate.scss';
+
+body {
+    background: #adabab;
+    font-family: "Open Sans", "Trebuchet MS", "Comic Sans MS", "Constantia", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    width: 30%;
+    height: 580px;
+    background: #fff;
+    position: relative;
+    margin: auto;
+    border-radius: 25px;
+    @include box-shadow (3px 3px 10px #555656);
+
+    .colorArea {
+        position: absolute;
+        width: 50%;
+        height: 25%;
+        margin: auto;
+        top: 50px;
+        right: 0;
+        left: 0;
+
+        .copyText{
+            position: absolute;
+            margin: auto;
+            background: #777676;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #eaeaea;
+            cursor: pointer;
+        }
+    }
+
+    #colorInput {
+        width: 250px;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        top: 235px;
+        right: 0;
+        left: 0;
+        outline: none;
+        cursor: initial;
+        border: none;
+        -webkit-appearance: none;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .colorInputWrapper {
+        position: absolute;
+        text-align: center;
+        margin: auto;
+        top: 300px;
+        right: 0;
+        left: 0;
+
+        label {
+            margin-right: 20px;
+        }
+
+        input {
+            margin: 20px auto 40px;
+            -webkit-appearance: none;
+            width: 200px;
+            outline: none;
+        }
+
+        input[type=range]:focus {
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            max-width: 200px;
+            height: 5px;
+            margin: 0 auto;
+            background: #eee;
+            border-radius: 25px;
+            transition: .3s;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background: #e6307c;
+            border-radius: 100%;
+            margin-top: -6px;
+            height: 15px;
+            width: 15px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        input[type=range]:focus::-webkit-slider-runnable-track {
+            background: rgba(182, 176, 175, 0.89);
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover,
+        input[type="range"]::-webkit-slider-thumb:active {
+            width: 18px;
+            height: 18px;
+        }
+
+        input[type=range]::-moz-range-track {
+            max-width: 200px;
+            height: 5px;
+            margin: 0 auto;
+            background: #eee;
+            border-radius: 25px;
+        }
+
+        input[type=range]::-moz-range-thumb {
+            height: 15px;
+            width: 15px;
+            border-radius: 100%;
+            background: #e6307c;
+            cursor: pointer;
+        }
+
+        input[type=range]::-ms-track {
+            max-width: 200px;
+            height: 5px;
+            margin: 0 auto;
+            cursor: pointer;
+            background: transparent;
+            border-color: transparent;
+            border-width: 39px 0;
+            color: transparent;
+        }
+
+        input[type=range]::-ms-fill-lower {
+            background: #eee;
+            border-radius: 50px;
+        }
+
+        input[type=range]::-ms-fill-upper {
+            background: #eee;
+            border-radius: 50px;
+        }
+
+        input[type=range]::-ms-thumb {
+            height: 15px;
+            width: 15px;
+            border-radius: 100%;
+            background: #e6307c;
+            cursor: pointer;
+        }
+
+        input[type=range]:focus::-ms-fill-lower {
+            background: #eee;
+        }
+
+        input[type=range]:focus::-ms-fill-upper {
+            background: #eee;
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,17 @@
+@import '~compass-mixins/lib/compass/_css3.scss';
+@import '~compass-mixins/lib/_animate.scss';
+
+@media screen and (max-width: 767px) {
+
+    .wrapper {
+        width: 90%;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .wrapper {
+        width: 70%;
+    }
+}
