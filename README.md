@@ -1,6 +1,6 @@
 # Color_Picker
 
-A tool let you to pick up the color yuo like.
+A tool let you to pick up the color you like.
 <br/>
 
 ## Demo
