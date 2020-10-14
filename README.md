@@ -5,7 +5,7 @@ A tool help you to pick the color you like.
 
 ## Demo
 
-### **[COLOR PICKER](http://www.yschen25.com/portfolio/colorPicker/) -> Where You Can See the Website**
+### **[COLOR PICKER](https://yschen25.github.io/Color_Picker/) -> Where You Can See the Website**
 <br/>
 
 <p align="enter">
